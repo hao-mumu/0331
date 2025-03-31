@@ -8,14 +8,14 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build: 
     commands:
-      - echo Build started on `date`
+      - echo Build started on 'date'
       - npm install 
-      - echo npm install completed on `date`
+      - echo npm install completed on 'date'
       - npm run build
-      - echo npm run build completed on `date`
+      - echo npm run build completed on 'date'
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed on 'date'
       - ls -l ./dist/shop/
 artifacts:
   files:
